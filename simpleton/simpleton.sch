@@ -426,6 +426,78 @@ Text Label 9400 2750 0    60   ~ 0
 VDD3
 Text Label 10000 2750 0    60   ~ 0
 VDD4
+Text Label 10450 900  0    60   ~ 0
+VCC_3_3V
+$Comp
+L CP2104 U?
+U 1 1 56D2AFA7
+P 5200 6850
+F 0 "U?" H 5200 6750 60  0000 C CNN
+F 1 "CP2104" H 5200 4550 60  0000 C CNN
+F 2 "" H 5200 6850 60  0000 C CNN
+F 3 "" H 5200 6850 60  0000 C CNN
+	1    5200 6850
+	1    0    0    -1  
+$EndComp
+Text Label 14850 900  0    60   ~ 0
+USB_DM
+Text Label 14850 800  0    60   ~ 0
+USB_DP
+NoConn ~ 12100 5600
+NoConn ~ 6000 7300
+NoConn ~ 6000 7400
+NoConn ~ 6000 7550
+NoConn ~ 6000 7650
+NoConn ~ 6000 7750
+NoConn ~ 6000 7850
+NoConn ~ 6000 8050
+NoConn ~ 6000 8150
+NoConn ~ 6000 8250
+NoConn ~ 6000 8350
+NoConn ~ 6000 8650
+NoConn ~ 6000 8750
+NoConn ~ 4400 8950
+Text Label 4000 8550 0    60   ~ 0
+USB_DP
+Text Label 4000 8650 0    60   ~ 0
+USB_DM
+Text Label 3300 8450 0    60   ~ 0
+VBUS
+$Comp
+L C_Small C?
+U 1 1 56D2DE4A
+P 4050 7400
+F 0 "C?" H 4060 7470 50  0000 L CNN
+F 1 "0.1uF" H 4060 7320 50  0000 L CNN
+F 2 "" H 4050 7400 60  0000 C CNN
+F 3 "" H 4050 7400 60  0000 C CNN
+	1    4050 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56D2DEC8
+P 3850 7400
+F 0 "C?" H 3860 7470 50  0000 L CNN
+F 1 "1uF" H 3860 7320 50  0000 L CNN
+F 2 "" H 3850 7400 60  0000 C CNN
+F 3 "" H 3850 7400 60  0000 C CNN
+	1    3850 7400
+	1    0    0    -1  
+$EndComp
+Text Label 3300 8100 0    60   ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 56D2E6A5
+P 4150 7900
+F 0 "C?" H 4160 7970 50  0000 L CNN
+F 1 "1uF" H 4160 7820 50  0000 L CNN
+F 2 "" H 4150 7900 60  0000 C CNN
+F 3 "" H 4150 7900 60  0000 C CNN
+	1    4150 7900
+	1    0    0    -1  
+$EndComp
 Connection ~ 13600 3050
 Connection ~ 14100 3050
 Wire Wire Line
@@ -608,6 +680,65 @@ Connection ~ 10100 2300
 Wire Wire Line
 	9800 950  10700 950 
 Connection ~ 9800 950 
-Text Label 10450 900  0    60   ~ 0
-VCC_3_3V
+Wire Wire Line
+	15300 800  14850 800 
+Wire Wire Line
+	15300 900  14850 900 
+Wire Wire Line
+	4400 8550 4000 8550
+Wire Wire Line
+	4400 8650 4000 8650
+Wire Wire Line
+	3300 8100 4400 8100
+Wire Wire Line
+	4400 8450 3300 8450
+Wire Wire Line
+	3700 8450 3700 7750
+Wire Wire Line
+	3700 7750 4400 7750
+Connection ~ 3700 8450
+Wire Wire Line
+	4400 7400 4300 7400
+Wire Wire Line
+	4300 7400 4300 7150
+Connection ~ 4300 7150
+Wire Wire Line
+	3850 7150 4400 7150
+Wire Wire Line
+	4050 7150 4050 7300
+Wire Wire Line
+	3850 7150 3850 7300
+Connection ~ 4050 7150
+Wire Wire Line
+	4050 7500 4050 7650
+Wire Wire Line
+	4050 7650 3550 7650
+Wire Wire Line
+	3550 7650 3550 8100
+Connection ~ 3550 8100
+Wire Wire Line
+	3850 7500 3850 7650
+Connection ~ 3850 7650
+Wire Wire Line
+	4150 7750 4150 7800
+Connection ~ 4150 7750
+Wire Wire Line
+	4150 8000 4150 8100
+Connection ~ 4150 8100
+Wire Wire Line
+	6000 8450 6450 8450
+Wire Wire Line
+	6000 8550 6450 8550
+Wire Wire Line
+	3350 3400 3950 3400
+Wire Wire Line
+	3350 3300 3950 3300
+Text Label 3500 3400 0    60   ~ 0
+USART1_TX
+Text Label 3500 3300 0    60   ~ 0
+USART1_RX
+Text Label 6000 8550 0    60   ~ 0
+USART1_TX
+Text Label 6000 8450 0    60   ~ 0
+USART1_RX
 $EndSCHEMATC
