@@ -864,4 +864,8 @@ Text Label 800  3100 0    60   ~ 0
 SPI_1_CS
 Text Label 800  3200 0    60   ~ 0
 SPI_1_SCLK
+Text Label 800  3300 0    60   ~ 0
+SPI_1_MISO
+Text Label 800  3400 0    60   ~ 0
+SPI_1_MOSI
 $EndSCHEMATC

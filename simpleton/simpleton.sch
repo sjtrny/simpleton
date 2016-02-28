@@ -529,7 +529,6 @@ Text Label 5100 7250 0    60   ~ 0
 SPI_1_CS
 Text Label 5100 7350 0    60   ~ 0
 SPI_1_MISO
-NoConn ~ 5800 7650
 NoConn ~ 7200 6650
 NoConn ~ 7200 6750
 NoConn ~ 7200 6850
@@ -868,4 +867,12 @@ Text Label 800  3300 0    60   ~ 0
 SPI_1_MISO
 Text Label 800  3400 0    60   ~ 0
 SPI_1_MOSI
+Wire Wire Line
+	5800 7650 5800 8250
+Text Label 5650 8400 0    60   ~ 0
+MPU_INT
+Wire Wire Line
+	1350 3500 800  3500
+Text Label 800  3500 0    60   ~ 0
+MPU_INT
 $EndSCHEMATC
