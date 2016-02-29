@@ -575,6 +575,60 @@ F 3 "" H 7500 7250 60  0000 C CNN
 	1    7500 7250
 	0    1    1    0   
 $EndComp
+Text Label 8050 7050 0    60   ~ 0
+GND
+Text Label 7500 6200 0    60   ~ 0
+VCC_3_3V
+Text Label 800  3100 0    60   ~ 0
+SPI_1_CS
+Text Label 800  3200 0    60   ~ 0
+SPI_1_SCLK
+Text Label 800  3300 0    60   ~ 0
+SPI_1_MISO
+Text Label 800  3400 0    60   ~ 0
+SPI_1_MOSI
+Text Label 5650 8400 0    60   ~ 0
+MPU_INT
+Text Label 800  3500 0    60   ~ 0
+MPU_INT
+$Comp
+L N25Q256A33EF840 U?
+U 1 1 56D3FBDB
+P 7350 2900
+F 0 "U?" H 7350 2800 60  0000 C CNN
+F 1 "N25Q256A33EF840" H 7350 2100 60  0000 C CNN
+F 2 "" H 7350 2900 60  0000 C CNN
+F 3 "" H 7350 2900 60  0000 C CNN
+	1    7350 2900
+	1    0    0    -1  
+$EndComp
+Text Label 8100 3400 0    60   ~ 0
+SPI_2_SCLK
+Text Label 6500 3500 0    60   ~ 0
+GND
+Text Label 6100 3200 0    60   ~ 0
+SPI_2_CS
+Text Label 8100 3500 0    60   ~ 0
+SPI_2_MOSI
+Text Label 6100 3300 0    60   ~ 0
+SPI_2_MISO
+Text Label 8200 3200 0    60   ~ 0
+VCC_3_3V
+$Comp
+L C_Small C?
+U 1 1 56D41127
+P 8050 2900
+F 0 "C?" H 8060 2970 50  0000 L CNN
+F 1 "100nF" H 8060 2820 50  0000 L CNN
+F 2 "" H 8050 2900 60  0000 C CNN
+F 3 "" H 8050 2900 60  0000 C CNN
+	1    8050 2900
+	1    0    0    -1  
+$EndComp
+Text Label 7950 2550 0    60   ~ 0
+GND
+Text Label 6100 3400 0    60   ~ 0
+VCC_3_3V
 Connection ~ 13600 3050
 Connection ~ 14100 3050
 Wire Wire Line
@@ -847,10 +901,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 7250 7600 7250
 Connection ~ 7700 7050
-Text Label 8050 7050 0    60   ~ 0
-GND
-Text Label 7500 6200 0    60   ~ 0
-VCC_3_3V
 Wire Wire Line
 	1350 3100 800  3100
 Wire Wire Line
@@ -859,20 +909,45 @@ Wire Wire Line
 	1350 3300 800  3300
 Wire Wire Line
 	1350 3400 800  3400
-Text Label 800  3100 0    60   ~ 0
-SPI_1_CS
-Text Label 800  3200 0    60   ~ 0
-SPI_1_SCLK
-Text Label 800  3300 0    60   ~ 0
-SPI_1_MISO
-Text Label 800  3400 0    60   ~ 0
-SPI_1_MOSI
 Wire Wire Line
 	5800 7650 5800 8250
-Text Label 5650 8400 0    60   ~ 0
-MPU_INT
 Wire Wire Line
 	1350 3500 800  3500
-Text Label 800  3500 0    60   ~ 0
-MPU_INT
+Wire Wire Line
+	7900 3400 8600 3400
+Wire Wire Line
+	6800 3200 6100 3200
+Wire Wire Line
+	6800 3300 6100 3300
+Wire Wire Line
+	7900 3500 8600 3500
+Wire Wire Line
+	6800 3500 6500 3500
+Wire Wire Line
+	7900 3200 8600 3200
+Wire Wire Line
+	8050 3000 8050 3300
+Connection ~ 8050 3200
+Wire Wire Line
+	8050 2800 8050 2600
+Wire Wire Line
+	8050 3300 7900 3300
+Wire Wire Line
+	6800 3400 6100 3400
+Wire Wire Line
+	3350 4300 3950 4300
+Wire Wire Line
+	3350 4200 3950 4200
+Wire Wire Line
+	3350 4100 3950 4100
+Wire Wire Line
+	3350 4000 3950 4000
+Text Label 3550 4300 0    60   ~ 0
+SPI_2_CS
+Text Label 3450 4200 0    60   ~ 0
+SPI_2_SCLK
+Text Label 3450 4100 0    60   ~ 0
+SPI_2_MISO
+Text Label 3450 4000 0    60   ~ 0
+SPI_2_MOSI
 $EndSCHEMATC
