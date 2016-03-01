@@ -1927,4 +1927,104 @@ Wire Wire Line
 	4100 5900 4100 6200
 Text Label 4000 6350 0    60   ~ 0
 BUZZ
+Wire Wire Line
+	1350 2000 800  2000
+Text Label 800  2000 0    60   ~ 0
+BUZZ
+Wire Wire Line
+	2900 6800 2900 7000
+$Comp
+L Led_Small D?
+U 1 1 56D5A53F
+P 2900 7100
+F 0 "D?" H 2850 7225 50  0000 L CNN
+F 1 "Led_Small" H 2725 7000 50  0000 L CNN
+F 2 "" V 2900 7100 60  0000 C CNN
+F 3 "" V 2900 7100 60  0000 C CNN
+	1    2900 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 7200 2900 7350
+$Comp
+L R_Small R?
+U 1 1 56D5A97A
+P 2900 7450
+F 0 "R?" H 2930 7470 50  0000 L CNN
+F 1 "100" H 2930 7410 50  0000 L CNN
+F 2 "" H 2900 7450 60  0000 C CNN
+F 3 "" H 2900 7450 60  0000 C CNN
+	1    2900 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 7550 2900 7700
+Text Label 2800 7800 0    60   ~ 0
+GND
+Text Label 2700 6750 0    60   ~ 0
+VCC_3_3V
+Wire Wire Line
+	3400 6800 3400 7000
+$Comp
+L Led_Small D?
+U 1 1 56D5B127
+P 3400 7100
+F 0 "D?" H 3350 7225 50  0000 L CNN
+F 1 "Led_Small" H 3225 7000 50  0000 L CNN
+F 2 "" V 3400 7100 60  0000 C CNN
+F 3 "" V 3400 7100 60  0000 C CNN
+	1    3400 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 7200 3400 7350
+$Comp
+L R_Small R?
+U 1 1 56D5B12E
+P 3400 7450
+F 0 "R?" H 3430 7470 50  0000 L CNN
+F 1 "100" H 3430 7410 50  0000 L CNN
+F 2 "" H 3400 7450 60  0000 C CNN
+F 3 "" H 3400 7450 60  0000 C CNN
+	1    3400 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7550 3400 7700
+Text Label 3300 7800 0    60   ~ 0
+LED1
+Text Label 3200 6750 0    60   ~ 0
+VCC_3_3V
+Wire Wire Line
+	3900 6800 3900 7000
+$Comp
+L Led_Small D?
+U 1 1 56D5B212
+P 3900 7100
+F 0 "D?" H 3850 7225 50  0000 L CNN
+F 1 "Led_Small" H 3725 7000 50  0000 L CNN
+F 2 "" V 3900 7100 60  0000 C CNN
+F 3 "" V 3900 7100 60  0000 C CNN
+	1    3900 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 7200 3900 7350
+$Comp
+L R_Small R?
+U 1 1 56D5B219
+P 3900 7450
+F 0 "R?" H 3930 7470 50  0000 L CNN
+F 1 "100" H 3930 7410 50  0000 L CNN
+F 2 "" H 3900 7450 60  0000 C CNN
+F 3 "" H 3900 7450 60  0000 C CNN
+	1    3900 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7550 3900 7700
+Text Label 3800 7800 0    60   ~ 0
+LED2
+Text Label 3700 6750 0    60   ~ 0
+VCC_3_3V
 $EndSCHEMATC
