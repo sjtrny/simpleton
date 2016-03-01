@@ -1197,6 +1197,73 @@ F 3 "" H 8300 8150 60  0000 C CNN
 $EndComp
 Text Label 8050 8650 0    60   ~ 0
 V_SELECT_OUT
+$Comp
+L R_Small R?
+U 1 1 56D53981
+P 8800 8150
+F 0 "R?" H 8830 8170 50  0000 L CNN
+F 1 "560k" H 8830 8110 50  0000 L CNN
+F 2 "" H 8800 8150 60  0000 C CNN
+F 3 "" H 8800 8150 60  0000 C CNN
+	1    8800 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 56D53B28
+P 7800 8150
+F 0 "R?" H 7830 8170 50  0000 L CNN
+F 1 "430k" H 7830 8110 50  0000 L CNN
+F 2 "" H 7800 8150 60  0000 C CNN
+F 3 "" H 7800 8150 60  0000 C CNN
+	1    7800 8150
+	0    1    1    0   
+$EndComp
+Text Label 9050 8100 0    60   ~ 0
+V_SELECT_IN
+Text Label 6950 8100 0    60   ~ 0
+V_SELECT_IN
+$Comp
+L R_Small R?
+U 1 1 56D558A9
+P 900 7200
+F 0 "R?" H 930 7220 50  0000 L CNN
+F 1 "70k" H 930 7160 50  0000 L CNN
+F 2 "" H 900 7200 60  0000 C CNN
+F 3 "" H 900 7200 60  0000 C CNN
+	1    900  7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 56D55CF9
+P 900 7800
+F 0 "R?" H 930 7820 50  0000 L CNN
+F 1 "10k" H 930 7760 50  0000 L CNN
+F 2 "" H 900 7800 60  0000 C CNN
+F 3 "" H 900 7800 60  0000 C CNN
+	1    900  7800
+	1    0    0    -1  
+$EndComp
+Text Label 700  6850 0    60   ~ 0
+VCC_LIPO
+Text Label 800  8200 0    60   ~ 0
+GND
+Text Label 1500 7450 0    60   ~ 0
+LIPO_VBAT
+Text Label 800  1900 0    60   ~ 0
+LIPO_VBAT
+$Comp
+L CONN_01X02 P?
+U 1 1 56D57BB2
+P 3150 5250
+F 0 "P?" H 3150 5400 50  0000 C CNN
+F 1 "CONN_01X02" V 3250 5250 50  0000 C CNN
+F 2 "" H 3150 5250 60  0000 C CNN
+F 3 "" H 3150 5250 60  0000 C CNN
+	1    3150 5250
+	-1   0    0    1   
+$EndComp
 Connection ~ 13600 3050
 Connection ~ 14100 3050
 Wire Wire Line
@@ -1807,75 +1874,61 @@ Wire Wire Line
 	8550 8150 8700 8150
 Wire Wire Line
 	8050 8150 7900 8150
-$Comp
-L R_Small R?
-U 1 1 56D53981
-P 8800 8150
-F 0 "R?" H 8830 8170 50  0000 L CNN
-F 1 "560k" H 8830 8110 50  0000 L CNN
-F 2 "" H 8800 8150 60  0000 C CNN
-F 3 "" H 8800 8150 60  0000 C CNN
-	1    8800 8150
-	0    1    1    0   
-$EndComp
-$Comp
-L R_Small R?
-U 1 1 56D53B28
-P 7800 8150
-F 0 "R?" H 7830 8170 50  0000 L CNN
-F 1 "430k" H 7830 8110 50  0000 L CNN
-F 2 "" H 7800 8150 60  0000 C CNN
-F 3 "" H 7800 8150 60  0000 C CNN
-	1    7800 8150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8900 8150 9450 8150
 Wire Wire Line
 	7700 8150 7050 8150
-Text Label 9050 8100 0    60   ~ 0
-V_SELECT_IN
-Text Label 6950 8100 0    60   ~ 0
-V_SELECT_IN
-$Comp
-L R_Small R?
-U 1 1 56D558A9
-P 900 7200
-F 0 "R?" H 930 7220 50  0000 L CNN
-F 1 "70k" H 930 7160 50  0000 L CNN
-F 2 "" H 900 7200 60  0000 C CNN
-F 3 "" H 900 7200 60  0000 C CNN
-	1    900  7200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	900  7300 900  7700
 Wire Wire Line
 	900  7500 1600 7500
 Connection ~ 900  7500
-$Comp
-L R_Small R?
-U 1 1 56D55CF9
-P 900 7800
-F 0 "R?" H 930 7820 50  0000 L CNN
-F 1 "10k" H 930 7760 50  0000 L CNN
-F 2 "" H 900 7800 60  0000 C CNN
-F 3 "" H 900 7800 60  0000 C CNN
-	1    900  7800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	900  7900 900  8100
 Wire Wire Line
 	900  7100 900  6900
-Text Label 700  6850 0    60   ~ 0
-VCC_LIPO
-Text Label 800  8200 0    60   ~ 0
-GND
-Text Label 1500 7450 0    60   ~ 0
-LIPO_VBAT
 Wire Wire Line
 	1350 1900 800  1900
-Text Label 800  1900 0    60   ~ 0
-LIPO_VBAT
+Wire Wire Line
+	3350 5200 3800 5200
+Text Label 3500 5200 0    60   ~ 0
+VCC_5V
+Wire Wire Line
+	3350 5300 3900 5300
+$Comp
+L Q_PNP_BEC Q?
+U 1 1 56D584DA
+P 4100 5400
+F 0 "Q?" H 4400 5450 50  0000 R CNN
+F 1 "Q_PNP_BEC" H 4700 5350 50  0000 R CNN
+F 2 "" H 4300 5500 29  0000 C CNN
+F 3 "" H 4100 5400 60  0000 C CNN
+	1    4100 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 5300 4650 5300
+Text Label 4500 5300 0    60   ~ 0
+GND
+Wire Wire Line
+	4100 5600 4100 5700
+$Comp
+L R_Small R?
+U 1 1 56D58A59
+P 4100 5800
+F 0 "R?" H 4130 5820 50  0000 L CNN
+F 1 "100" H 4130 5760 50  0000 L CNN
+F 2 "" H 4100 5800 60  0000 C CNN
+F 3 "" H 4100 5800 60  0000 C CNN
+	1    4100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5900 4100 6200
+Text Label 4000 6350 0    60   ~ 0
+BUZZ
+Wire Wire Line
+	1350 2000 800  2000
+Text Label 800  2000 0    60   ~ 0
+BUZZ
 $EndSCHEMATC
