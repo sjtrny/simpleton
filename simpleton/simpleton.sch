@@ -1053,14 +1053,6 @@ F 3 "" H 900 6100 60  0000 C CNN
 $EndComp
 Text Label 1250 6100 0    60   ~ 0
 ESC4_OUT
-Text Label 800  3600 0    60   ~ 0
-ESC1_OUT
-Text Label 800  3700 0    60   ~ 0
-ESC2_OUT
-Text Label 800  3800 0    60   ~ 0
-ESC3_OUT
-Text Label 800  3900 0    60   ~ 0
-ESC4_OUT
 $Comp
 L MP1584 U?
 U 1 1 56D510D4
@@ -1795,12 +1787,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 6100 1700 6100
 Wire Wire Line
-	1350 3600 800  3600
-Wire Wire Line
-	1350 3700 800  3700
-Wire Wire Line
-	1350 3800 800  3800
-Wire Wire Line
 	1350 3900 800  3900
 Wire Wire Line
 	6400 6150 7050 6150
@@ -2035,4 +2021,63 @@ Text Label 3750 1900 0    60   ~ 0
 LED1
 Text Label 3750 1800 0    60   ~ 0
 LED2
+Wire Wire Line
+	3350 3900 3950 3900
+Wire Wire Line
+	3350 3800 3950 3800
+Wire Wire Line
+	3350 3700 3950 3700
+Wire Wire Line
+	3350 3600 3950 3600
+Text Label 3500 3900 0    60   ~ 0
+ESC1_OUT
+Text Label 3500 3800 0    60   ~ 0
+ESC2_OUT
+Text Label 3500 3700 0    60   ~ 0
+ESC3_OUT
+Text Label 3500 3600 0    60   ~ 0
+ESC4_OUT
+Text Label 800  3900 0    60   ~ 0
+GND
+Wire Wire Line
+	3350 1600 3950 1600
+Text Label 3650 1600 0    60   ~ 0
+BOOT0
+Wire Wire Line
+	5550 4400 6250 4400
+Wire Wire Line
+	6000 4400 6000 4250
+Connection ~ 6000 4400
+$Comp
+L R_Small R?
+U 1 1 57133C31
+P 6350 4400
+F 0 "R?" H 6380 4420 50  0000 L CNN
+F 1 "10K" H 6380 4360 50  0000 L CNN
+F 2 "" H 6350 4400 60  0000 C CNN
+F 3 "" H 6350 4400 60  0000 C CNN
+	1    6350 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 4400 6800 4400
+Text Label 6650 4400 0    60   ~ 0
+GND
+Text Label 5550 4400 0    60   ~ 0
+BOOT0
+$Comp
+L Jumper_NO_Small JP?
+U 1 1 5713413B
+P 6000 4150
+F 0 "JP?" H 6000 4230 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6010 4090 50  0001 C CNN
+F 2 "" H 6000 4150 60  0000 C CNN
+F 3 "" H 6000 4150 60  0000 C CNN
+	1    6000 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4050 6000 3800
+Text Label 5800 3750 0    60   ~ 0
+VCC_3_3V
 $EndSCHEMATC
