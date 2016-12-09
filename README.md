@@ -1,6 +1,7 @@
 # simpleton
 
-The Simpleton flight controller is the next evolution in flight controllers.
+The Simpleton flight controller.
+[NO LONGER UNDER DEVELOPMENT]
 
 Features of Simpleton:
 
